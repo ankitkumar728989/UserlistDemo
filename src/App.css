@@ -3,5 +3,8 @@
 }
 
 .App .header{
-  background-color: burlywood;
+  margin-top: 40px;
+}
+.App .footer{
+  margin-top: 40px;
 }

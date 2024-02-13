@@ -5,11 +5,9 @@ import Footer from './commonModule/footer';
 function App() {
   return (
     <div className="App">
-      <div className='header'>
-       <Header/>
-       </div>
-       <Routing/>
-       <Footer/>
+       <Header className="header"/>
+       <Routing className="routing"/>
+       <Footer className="footer"/>
     </div>
   );
 }
