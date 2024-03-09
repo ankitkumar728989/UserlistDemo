@@ -102,4 +102,13 @@ body {
     margin-right: unset;
     margin-top: 22px;
   }
+  
+}
+
+.nav-elements ul li #btn{
+  min-width: 70px;
+  padding: 4px;
+  background-color: antiquewhite;
+  color: black;
+  border: 2px solid;
 }
