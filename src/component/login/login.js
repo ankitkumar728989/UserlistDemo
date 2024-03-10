@@ -1,14 +1,16 @@
 import React, { useState }  from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation} from "react-router-dom";
 import "./login.css";
 
 export function Login(){
-    const navigate = useNavigate();
+    const {state} = useLocation();
+    const navigate =useNavigate();
 const [email,setEmail]=useState();
 const [password,setPassword]=useState();
-
+const from = state ? state.from.pathname : "/user";
 const gotoRegisterationPage=()=>{
-    navigate("/Registration");
+  navigate("/Registration", { replace: true });
+  window.location.reload();  // need to change this
 }
 
 const handleInputChangeEmail=(event)=>{
@@ -23,7 +25,8 @@ const handleInputChangePassword=(event)=>{
 const handleSignInPage=()=>{
   if(email && password){
     localStorage.setItem("token",password);
-    navigate("/user");
+    navigate(from, { replace: true });
+    window.location.reload();  // need to change this
   }else{
     return
   }

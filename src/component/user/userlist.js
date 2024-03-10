@@ -1,7 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./userlist.css";
 export function Userlist(){
-    const [users,setUsers]=useState(JSON.parse(localStorage.getItem("users") || '[]'));
+     const [users,setUsers]=useState(JSON.parse(localStorage.getItem("users") || '[]'));
+    useEffect(()=>{
+       fetch('https://dummyjson.com/users').then(res => res.json())
+       .then(json => setUsers(json.users));
+    });
     return (
         <div className="main">
             <h3>userlist</h3>
@@ -12,22 +16,18 @@ export function Userlist(){
                     <th>Email</th>
                     <th>mobileNo</th>
                     <th>City</th>
-                </tr>
-                <tr>
-                    {users.map((item,index)=>{
+                    </tr>
+                    {users && users.map((item,index)=>{
                         return(
-                            <>
-                       <td>{index}</td>
-                       <td>{item.name}</td>
+                            <tr>
+                       <td>{item.id || index}</td>
+                       <td>{item.name || `${item.firstName}  ${item.lastName}`}</td>
                        <td>{item.email}</td>
-                       <td>{item.mobileNo}</td>
-                       <td>{item.City}</td>
-                       </>
+                       <td>{item.mobileNo || item.phone}</td>
+                       <td>{item.City || item.address.city}</td>
+                       </tr>
                         )
-                    })}
-                    
-                </tr>
-
+                    })}                                
             </table>
         </div>
     )
