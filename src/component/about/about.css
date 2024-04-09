@@ -1,0 +1,149 @@
+.Main .Heading{
+    background-color: rgb(235, 81, 81);
+    min-height: 100px;
+    padding: 10px;
+}
+.Main .Heading h3{
+    color: white;
+}
+.Main .Heading p{
+    color: white;
+}
+.Main .InnerSection{
+  background-color: antiquewhite;
+  min-height: 250px;
+}
+.Main .InnerSection h2{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.Main .InnerSection p{
+  text-align: justify;
+  word-wrap: break-word;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.Main .InnerSection button{
+    margin: 20px;
+    display: flex;
+    padding: 10px;
+    min-width: 100px;
+    text-align: center;
+    background-color: #6c6262;
+    color: white;
+}
+.Main .FitnessSection h1{
+  text-align: left;
+  padding-left: 20px;
+}
+.Main .FitnessSection #table{
+    width: 100%;
+}
+.Main .FitnessSection #table th{
+    background: #9d9494;
+    color: white;
+}
+.Main .fitnessTips{
+    background-color: #827171;
+    min-height: 350px;
+}
+.Main .fitnessTips h2{
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.Main .fitnessTips ul{
+    list-style-type: square;
+    margin-left: 10px;
+}
+.Main .fitnessTips ul li{
+    text-align: left;
+    padding-left: 5px;
+}
+.Main .fitnessTips button{
+margin: 20px;
+display: flex;
+padding: 10px;
+min-width: 200px;
+text-align: center;
+background-color: black;
+color: white;
+}
+.Main .FitnessEquipment h2{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+.Main .FitnessEquipment .FitnessItem{
+    text-align: center;
+    background-color: #f3f3f3;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.Main .MealPlans h2{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.Main .MealPlans .head{
+    background-color: #e0d8d8;
+    margin: 20px;
+}
+.Main .MealPlans .head h3{
+    text-align: left;
+    margin-left: 20px;
+}
+.Main .MealPlans .head .Mealtype{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.Main .MealPlans .head .Mealtype button{
+    padding: 10px;
+    background-color: rgb(218, 59, 59);
+    color: white;
+    margin-left: 20px;
+    min-width: auto;
+    margin-bottom: 20px;
+}
+
+.Main .MealPlans .head .foodtype{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.Main .MealPlans .head .foodtype button{
+    padding: 10px;
+    background-color: rgb(218, 59, 59);
+    color: white;
+    margin-left: 20px;
+    min-width: auto;
+    margin-bottom: 20px;
+}
+.Main .MealPlans .head .HealthFocustype{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.Main .MealPlans .head .HealthFocustype button{
+    padding: 10px;
+    background-color: rgb(218, 59, 59);
+    color: white;
+    margin-left: 20px;
+    min-width: auto;
+    margin-bottom: 20px;
+}
+.Main .ScrollerMoverSection{
+    text-align: justify;
+    background-color: rgb(245, 147, 147);
+    padding: 20px;
+    margin-bottom: 20px;
+    
+    
+}

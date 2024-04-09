@@ -1,8 +1,9 @@
 import {Route,Routes} from "react-router-dom";
-import Login from "../src/component/login/login"
-import Userlist from "../src/component/user/userlist"
+import Login from "../src/component/login/login";
+import Userlist from "../src/component/user/userlist";
 import Navbar from "./commonModule/Navbar/Navbar";
-import Registration from "./component/Register/Registration"
+import Registration from "./component/Register/Registration";
+import About from "./component/about/about"
 export function Routing(){
     return(
 
@@ -17,6 +18,7 @@ export function Routing(){
     <Navbar/>
     <Routes>
     <Route path="/user" Component={Userlist}></Route>
+    <Route path="/About" Component={About}></Route>
    </Routes>
    </>
 )
