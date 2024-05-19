@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter} from "react-router-dom";
+import { ErrorBoundary } from 'react-error-boundary';
+import Fallback from './component/Fallback/Fallback';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter><App /></BrowserRouter>
+    <ErrorBoundary FallbackComponent={Fallback}>  <App /></ErrorBoundary>
   </React.StrictMode>
 );
 

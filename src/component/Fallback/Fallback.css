@@ -1,0 +1,17 @@
+.fallback{
+    border: 2px solid black;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+}
+.fallback .fallback__header{
+    color: red;
+}
+.fallback .hrfix{
+    color: red;
+    background-color: red;
+    line-height: 5
+}

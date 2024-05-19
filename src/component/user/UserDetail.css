@@ -1,0 +1,27 @@
+.maindetail #userdetail{
+width: 100%;
+padding: 10px;
+}
+
+
+.maindetail #userdetail  th {
+    border: 2px solid green;
+    background-color: green;
+    color: white;
+    text-align: left;
+}
+
+
+.maindetail #userdetail td{
+    color: grey;
+    text-align: left;
+}
+
+ #userdetail th , #userdetail td{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#userdetail tr:nth-child(even){
+    color: grey;
+}

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./userlist.css";
+import { Link } from "react-router-dom";
 export function Userlist(){
      const [users,setUsers]=useState(JSON.parse(localStorage.getItem("users") || '[]'));
     useEffect(()=>{
@@ -20,7 +21,7 @@ export function Userlist(){
                     {users && users.map((item,index)=>{
                         return(
                             <tr>
-                       <td>{item.id || index}</td>
+                       <Link to={`UserDetail/${item.id}`}>{item.id || index}</Link>
                        <td>{item.name || `${item.firstName}  ${item.lastName}`}</td>
                        <td>{item.email}</td>
                        <td>{item.mobileNo || item.phone}</td>
